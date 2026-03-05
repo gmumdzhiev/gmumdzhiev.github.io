@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Silkscreen } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+import SiteTracker from "@/components/site-tracker"
 import './globals.css'
 
 const _silkscreen = Silkscreen({ 
@@ -41,7 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans antialiased">
         {children}
-        <Analytics />
+        <SiteTracker />
       </body>
     </html>
   )

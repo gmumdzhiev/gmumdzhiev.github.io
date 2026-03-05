@@ -8,3 +8,9 @@ node_modules/
 .next/
 .env*.local
 .DS_Store
+
+# Build output
+/out
+
+# Generated nojekyll (created by predeploy script)
+/public/.nojekyll
